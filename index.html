@@ -7,7 +7,7 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/createjs.js"></script>
 		<script src="js/af.min.js"></script>
-		<script src="js/logo_animation_bitmap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/logo_animation_1.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 <body>
@@ -23,10 +23,12 @@
 			<scene name='scene_4'></scene>
 			<scene name='scene_5'></scene>
 			<scene name='scene_6'></scene>
+			<scene name='scene_7'></scene>
+			<scene name='scene_8'></scene>
 		</swipe>
 		
     		<scene name="scene_1"> 
-        		<position name='title_mc' center='0' middle='0'></position>
+        		<position name='title_mc' left='320' middle='0'></position>
         		<position name='bar_mc' center='0' bottom='0'></position>
         		<position name='bg_mc' scale='cover'></position>
         		<action type='init'>
@@ -144,11 +146,38 @@
                 		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
             		</next>
         		</action>
-        		<!--<action type='swipe_top'>
-        			<next>
-        				<fragment type='turn' direction='bottom' target='scene_4' effect='translation' ease='cubicInOut'></fragment>
-        			</next>
-        		</action>-->
+    		</scene>
+    		
+    		<scene name="scene_7"> 
+        		<position name='title_mc' center='0' middle='0'></position>
+        		<position name='bar_mc' center='0' bottom='0'></position>
+        		<position name='bg_mc' scale='cover'></position>
+        		<action type='init'>
+            		<next>
+                		<fragment type='stop' name='title_mc' frame='0'></fragment>
+            		</next>
+        		</action>
+        		<action type='show'>
+            		<next once>
+                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
+            		</next>
+        		</action>
+    		</scene>
+    		
+    		<scene name="scene_8"> 
+        		<position name='title_mc' center='0' middle='0'></position>
+        		<position name='bar_mc' center='0' bottom='0'></position>
+        		<position name='bg_mc' scale='cover'></position>
+        		<action type='init'>
+            		<next>
+                		<fragment type='stop' name='title_mc' frame='0'></fragment>
+            		</next>
+        		</action>
+        		<action type='show'>
+            		<next once>
+                		<fragment type='play' name='title_mc' start='start' end='end'></fragment>
+            		</next>
+        		</action>
     		</scene>
     		
    </div>
